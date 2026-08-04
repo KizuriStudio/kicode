@@ -1,0 +1,45 @@
+{
+  "name": "@kizuristudio/kicode",
+  "version": "0.1.0",
+  "description": "KICode — agente de IA profissional no terminal, estilo Claude Code, com suporte a múltiplos provedores e modelos. Feito pela Kizuri Studio.",
+  "type": "module",
+  "bin": {
+    "kicode": "dist/cli.js"
+  },
+  "main": "dist/cli.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "ai",
+    "cli",
+    "tui",
+    "agent",
+    "claude",
+    "chatbot",
+    "llm",
+    "kizuri",
+    "terminal"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "ink": "^5.0.1",
+    "react": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^18.3.0",
+    "typescript": "^5.7.0"
+  }
+}
